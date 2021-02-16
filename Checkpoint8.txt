@@ -1,0 +1,78 @@
+Checkpoint 8
+
+
+Function vowels(sentence:string)
+
+var i,nbvowels:integer
+
+Begin
+
+nbvowels:=0
+
+for i:=0 to length.sentence
+
+if (sentence[i]='a'||sentence[i]='e'||sentence[i]='i'||sentence[i]='o'||sentence[i]='u'||sentence[i]='y') then
+
+nbvowels:=nbvowels+1
+
+Endif
+
+return nbvowels
+
+End
+
+
+Function words(sentence:string)
+
+variable i,nbwords:integer
+
+Begin
+
+nbwords:=0
+
+for i:=0 to length.sentence
+
+if (sentence[i]=' ') then
+
+nbwords:=nbwords+1
+
+Endif
+
+return nbwords
+
+End
+
+
+Function numberchar(sentence:string)
+
+variable i,nbchar:integer
+
+Begin
+
+nbchar:=0
+
+i=0
+
+while(sentence[i]!='.')
+
+nbchar:=nbchar+1
+i++
+
+return nbchar
+
+End
+
+Var sentence:string
+
+begin
+
+Read(sentence)
+write('nbvowels:vowels(sentence),nbwords:words(sentence),nbchar:numberchar(sentence)')
+End
+
+
+
+
+
+
+
