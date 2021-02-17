@@ -1,0 +1,27 @@
+
+procedure TriInsertion (var Tab[]) ;
+var i, j, v : integer;
+begin
+  for i := 2 to N do
+  begin
+     v := Tab[ i ];
+     j := i ;
+    while Tab[ j-1 ] > v do
+    begin
+         Tab[ j ] := Tab[ j-1 ] ;
+          j := j - 1 ;
+    end;
+    Tab[ j ] := v ;
+  end
+end;
+/********************/
+Algo Checkpoint11
+var i:integer
+Begin 
+for i:=0 to N do
+Write("Give the element", i+1 ,"of the tab);
+Read(Tab(i))
+End for
+triInsertion(Tab)
+End
+
