@@ -1,0 +1,74 @@
+Checkpoint 10:
+
+procedure dot_product(ps:integer)
+Var 
+ i:integer;
+ ps:=0;
+ Begin 
+ For i:=0 to 3 i++
+ ps:=ps+(tabV(i)*tabU(i))
+Endfor
+End
+
+/*****************************************/
+
+Algorithme orthogonalite
+
+var tabU,tabV : Vecteurs[N] Of Integer;
+i,N:integer
+Begin 
+write("Give the number of elements")
+read(N)
+for i:=0 to N-1 i++ 
+Write("Give the element", i+1 ,"of the vector U);
+Read(U(i))
+End for
+
+for i:=0 to N-1 i++ 
+Write("Give the element", i+1 ,"of the vector V);
+Read(V(i))
+End for
+dot_product(ps)
+write(ps)
+if(ps=0)
+write(" two vectors are orthogonal")
+else write( "two vectors aren't orthogonal")
+Endif
+End
+/****************************************/
+Function dot_product(tabU,tabV,N) :Integer
+Begin
+var
+tabU,tabV : Vecteurs[N] Of Integer;
+i,j,mult, ps : Integer;
+ps ← 0
+For i:=0 To N-1 Do
+For j:=0 To N-1 Do
+ps := ps + tabU[i] * tabV[j]
+Endfor
+Endfor
+return (ps);
+End
+/*********************/
+Algorithme orthogonalite2
+
+var tabU,tabV : Vecteurs[N] Of Integer;
+i,N:integer;
+Begin 
+write("Give the number of elements")
+read(N)
+for i:=0 to N-1 i++ 
+Write("Give the element", i+1 ,"of the vector U);
+Read(tabU(i))
+End for
+for i:=0 to N-1 i++ 
+Write("Give the element", i+1 ,"of the vector V);
+Read(tabV(i))
+End for
+resultatps=dot_product()
+write(resultatps)
+if(resultatps=0)
+write(" two vectors are orthogonal")
+else write( "two vectors aren't orthogonal")
+Endif
+End
